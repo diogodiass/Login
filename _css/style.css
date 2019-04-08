@@ -1,0 +1,76 @@
+.body{
+    
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: blueviolet;
+  
+}
+
+.loginbox{
+    
+    width: 300px;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #191919;
+    text-align: center;
+    opacity : 0.9;
+    border-radius: 24px;
+}
+
+.loginbox h1{
+    
+    color: white;
+    font-weight: 500;
+}
+
+/*Altera dentro dos campos text e password*/
+.loginbox input[type = "text"],.loginbox input[type = "password"]{
+    
+    
+    border: 0;
+    background: none;
+    display: block;/*display é a propriedade mais importante do CSS para controlar o layout "Block fixa essa posição"*/ 
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #3498db;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;/*outline é uma propriedade abreviada para configurar uma ou mais das propriedades de contorno*/
+    color:white;
+    border-radius: 24px;/*Deixa a borda arredondada*/ 
+    transition: 0.25s;
+}
+
+.loginbox input[type = "text"]:focus,.loginbox input[type = "password"]:focus{
+    
+    width: 280px;
+    border-color: #2ecc71;
+}
+
+.loginbox input[type="submit"]{
+    
+    border: 0;
+    background: none;
+    display: block;/*display é a propriedade mais importante do CSS para controlar o layout "Block fixa essa posição"*/ 
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #2ecc71;
+    padding: 14px 40px;
+    outline: none;/*outline é uma propriedade abreviada para configurar uma ou mais das propriedades de contorno*/
+    color:white;
+    border-radius: 24px;/*Deixa a borda arredondada*/ 
+    transition: 0.25s;
+}
+    
+
+.loginbox input[type="submit"]:hover{
+
+    background: #2ecc71;
+    
+}
+
+
